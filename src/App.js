@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import './variables.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
+      <Header />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit
-          {' '}
           <code>src/App.js</code>
           {' '}
           and save to reload.
