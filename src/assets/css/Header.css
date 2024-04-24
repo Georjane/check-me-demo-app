@@ -5,3 +5,7 @@
 #navbar-links .nav-link:hover {
   color: var(--primary-color);
 }
+
+#menu-icon {
+    border: none;
+}

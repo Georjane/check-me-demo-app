@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 // import { FaAngleDown } from 'react-icons/fa';
 import logoSvg from '../assets/images/logo.svg';
 import globalSvg from '../assets/images/global.svg';
+import menuSvg from '../assets/images/menu.svg';
 import arrowDownSvg from '../assets/images/arrow-down.svg';
 import Button from './Button';
 import '../assets/css/Header.css';
@@ -12,7 +13,9 @@ function Header() {
     <Navbar expand="lg" bg="light" variant="light" sticky="top">
       <Container>
         <Navbar.Brand href="#"><img src={logoSvg} alt="Logo" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle id="menu-icon" aria-controls="navbar-nav">
+          <img src={menuSvg} alt="Menu bar" />
+        </Navbar.Toggle>
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto" id="navbar-links">
             <Nav.Link className="px-3" href="#">Home</Nav.Link>
