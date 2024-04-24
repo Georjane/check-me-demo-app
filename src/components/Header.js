@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 // import { FaAngleDown } from 'react-icons/fa';
 import logoSvg from '../assets/images/logo.svg';
 import globalSvg from '../assets/images/global.svg';
@@ -18,9 +19,9 @@ function Header() {
         </Navbar.Toggle>
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto" id="navbar-links">
-            <Nav.Link className="px-3" href="#">Home</Nav.Link>
-            <Nav.Link className="px-3" href="#">About Us</Nav.Link>
-            <Nav.Link className="px-3" href="#">
+            <Nav.Link as={Link} to="/" className="px-3">Home</Nav.Link>
+            <Nav.Link className="px-3" as={Link} to="/about">About Us</Nav.Link>
+            <Nav.Link className="px-3" as={Link} to="/home">
               Services
               {' '}
               <img src={arrowDownSvg} alt="Arrow down" />

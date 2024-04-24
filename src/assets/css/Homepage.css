@@ -1,0 +1,6 @@
+.hero-btn {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin: auto;
+}

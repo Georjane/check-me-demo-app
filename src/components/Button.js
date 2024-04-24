@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import { FaGithub, FaTwitter } from 'react-icons/fa';
-import '../assets/css/Button.css'; // Import custom styles for the Button component
+import '../assets/css/Button.css';
 
 function Button({ type, text, icon }) {
   let buttonClass = 'button';
@@ -11,7 +11,6 @@ function Button({ type, text, icon }) {
   } else if (type === 'text-icon') {
     buttonClass += ' text-icon';
   }
-
   return (
     <button type="button" className={buttonClass}>
       <span className="text">{text}</span>
