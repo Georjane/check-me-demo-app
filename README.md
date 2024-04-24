@@ -25,3 +25,11 @@ Run `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-s
 Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
 
 Fix linter errors manually or use auto correct command `npx stylelint "**/*.{css,scss}" --fix`.
+
+```
+<div>
+<Button type="default" text="Default Button" />
+<Button type="outline" text="Outline Button" />
+<Button type="text-icon" text="Button with Icon" icon={<FaAngleDown />} />
+</div>
+```
