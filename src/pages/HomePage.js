@@ -2,6 +2,7 @@ import React from 'react';
 import { FaAngleDown } from 'react-icons/fa';
 import Button from '../components/Button';
 import heroImgSvg from '../assets/images/hero-img.svg';
+import laptop1Svg from '../assets/images/laptop1.svg';
 import '../assets/css/Homepage.css';
 
 function HomePage() {
@@ -68,6 +69,27 @@ function HomePage() {
           </div>
           <Button color="white" type="text-icon" text="Read More" icon={<FaAngleDown />} />
         </div>
+      </section>
+      <section className="app-section d-md-flex">
+        <div className="order-2 app-section-div">
+          <h6>CHECK FOR BREAST CANCER WARRIORS</h6>
+          <h2>Your Personalized Breast Cancer Hub</h2>
+          <p>
+            Join Check Me Patient on the web and mobile to Access Support,
+            Resources, and Expert Guidance. Some key features include:
+          </p>
+          <ul>
+            <li> Access personalized support tailored to your unique needs and preferences.</li>
+            <li>Locate and navigate to the nearest healthcare facilities.</li>
+            <li>
+              Easily schedule and manage appointments with healthcare providers,
+              ensuring timely access to care.
+            </li>
+          </ul>
+          <Button type="text-icon" text="Read More" icon={<FaAngleDown />} />
+
+        </div>
+        <div className="app-section-div"><img className="laptop" src={laptop1Svg} alt="laptop" /></div>
       </section>
     </div>
   );
