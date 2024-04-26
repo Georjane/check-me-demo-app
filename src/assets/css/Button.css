@@ -20,6 +20,12 @@
   color: var(--primary-color);
 }
 
+.whiteoutline {
+  background-color: transparent;
+  border: 1px solid  white !important;
+  color: white !important;
+}
+
 .outline:hover {
   background-color: #f8f9fa;
 }
@@ -27,6 +33,9 @@
 .text-icon {
   display: flex;
   align-items: center;
+  background-color: transparent;
+  border: 1px solid  var(--primary-color);
+  color: var(--primary-color);
 }
 
 .icon {

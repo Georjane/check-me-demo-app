@@ -1,15 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import { FaGithub, FaTwitter } from 'react-icons/fa';
-import '../assets/css/Button.css'; // Import custom styles for the Button component
+import '../assets/css/Button.css';
 
-function Button({ type, text, icon }) {
+function Button({
+  type, text, icon, color,
+}) {
   let buttonClass = 'button';
 
   if (type === 'outline') {
     buttonClass += ' outline';
   } else if (type === 'text-icon') {
     buttonClass += ' text-icon';
+  }
+
+  if (color === 'white') {
+    buttonClass += ' whiteoutline';
   }
 
   return (
@@ -21,13 +27,15 @@ function Button({ type, text, icon }) {
 }
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['default', 'outline', 'text-icon']).isRequired, // Validate the type prop
-  text: PropTypes.string.isRequired, // Validate the text prop
-  icon: PropTypes.element, // Validate the icon prop (optional)
+  type: PropTypes.oneOf(['default', 'outline', 'text-icon']).isRequired,
+  text: PropTypes.string.isRequired,
+  icon: PropTypes.element,
+  color: PropTypes.string,
 };
 
 Button.defaultProps = {
-  icon: null, // Set a default value of null for the icon prop
+  icon: null,
+  color: null,
 };
 
 export default Button;

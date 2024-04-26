@@ -38,3 +38,13 @@
     transform: rotate(360deg);
   }
 }
+
+h1,
+h2,
+p,
+button,
+a,
+span,
+div {
+  font-family: var(--font-family);
+}
