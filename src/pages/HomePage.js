@@ -3,6 +3,7 @@ import { FaAngleDown } from 'react-icons/fa';
 import Button from '../components/Button';
 import heroImgSvg from '../assets/images/hero-img.svg';
 import laptop1Svg from '../assets/images/laptop1.svg';
+import laptop2Svg from '../assets/images/laptop2.svg';
 import '../assets/css/Homepage.css';
 
 function HomePage() {
@@ -79,7 +80,7 @@ function HomePage() {
             Resources, and Expert Guidance. Some key features include:
           </p>
           <ul>
-            <li> Access personalized support tailored to your unique needs and preferences.</li>
+            <li>Access personalized support tailored to your unique needs and preferences.</li>
             <li>Locate and navigate to the nearest healthcare facilities.</li>
             <li>
               Easily schedule and manage appointments with healthcare providers,
@@ -89,7 +90,31 @@ function HomePage() {
           <Button type="text-icon" text="Read More" icon={<FaAngleDown />} />
 
         </div>
-        <div className="app-section-div"><img className="laptop" src={laptop1Svg} alt="laptop" /></div>
+        <div className="app-section-div">
+          <img className="laptop" src={laptop1Svg} alt="laptop" />
+          <div className="pink-shadow pink2 d-none d-md-block" />
+        </div>
+      </section>
+      <section className="app-section d-md-flex">
+        <div className="app-section-div">
+          <h6>CHECKME FOR MEDICAL SPECIALISTS</h6>
+          <h2>Elevate Your Practice with Check Me Specialist.</h2>
+          <p>
+            Join Check Me Specialist on the web and mobile to revolutionize the way
+            you provide care and collaborate with colleagues. Some key features include:
+          </p>
+          <ul>
+            <li>Schedule, reschedule, and manage appointments efficiently.</li>
+            <li>Secure Communication with Patients.</li>
+            <li>Eliminate paper prescriptions &  streamline medication management.</li>
+          </ul>
+          <Button type="text-icon" text="Read More" icon={<FaAngleDown />} />
+
+        </div>
+        <div className="app-section-div">
+          <img className="laptop" src={laptop2Svg} alt="laptop" />
+          <div className="pink-shadow d-none d-md-block" />
+        </div>
       </section>
     </div>
   );

@@ -23,7 +23,29 @@
     width: 100%;
     background-size: cover;
     background-position: center;
+    z-index: 2;
 }
+
+.app-section-div {
+    position: relative;
+  }
+
+  .pink-shadow {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(234, 60, 130, 0.448) 15%, transparent 60%);
+    width: 300px;
+    height: 300px;
+    top: calc(100% - 230px); 
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-20%);
+  }
+
+  .pink2 {
+    top: calc(100% - 270px);
+    transform: translateX(-50%);
+  }
 
 .img-div {
     margin: auto -12px;
