@@ -39,6 +39,12 @@
   }
 }
 
-h1, h2, p, button, a, span, div {
+h1,
+h2,
+p,
+button,
+a,
+span,
+div {
   font-family: var(--font-family);
 }
