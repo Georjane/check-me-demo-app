@@ -4,6 +4,9 @@ import Button from '../components/Button';
 import heroImgSvg from '../assets/images/hero-img.svg';
 import laptop1Svg from '../assets/images/laptop1.svg';
 import laptop2Svg from '../assets/images/laptop2.svg';
+import starsSvg from '../assets/images/stars.svg';
+import womanSvg from '../assets/images/woman.svg';
+import manSvg from '../assets/images/man.svg';
 import '../assets/css/Homepage.css';
 
 function HomePage() {
@@ -114,6 +117,40 @@ function HomePage() {
         <div className="app-section-div">
           <img className="laptop" src={laptop2Svg} alt="laptop" />
           <div className="pink-shadow d-none d-md-block" />
+        </div>
+      </section>
+      <section className="testimonials">
+        <p className="pink-text">500+ Happy CheckMe Users</p>
+        <h2>Don&apos;t just take our words</h2>
+        <div className="m-5 d-md-flex justify-content-between">
+          <div className="d-flex align-items-center w-100 py-2">
+            <img className="testinmonial-img w-50 d-md-none" src={womanSvg} alt="Woman" />
+            <img className="testinmonial-img d-none d-md-block" src={womanSvg} alt="Woman" />
+            <div className="testinmonial-div">
+              <img src={starsSvg} alt="Review Stars" />
+              <p>
+                “The personalized support and guidance I&apos;ve received
+                have made all the difference in my recovery. I&apos;m grateful
+                for Check Me team.”
+              </p>
+              <span>Jenny Wilson</span>
+              <br />
+              <span>Breast Cancer Warrior</span>
+            </div>
+          </div>
+          <div className="d-flex w-100 align-items-center py-2">
+            <img className="testinmonial-img w-50 d-md-none" src={manSvg} alt="Man" />
+            <img className="testinmonial-img d-none d-md-block" src={manSvg} alt="Man" />
+            <div className="testinmonial-div">
+              <img src={starsSvg} alt="Review Stars" />
+              <p>
+                “The platform&apos;s intuitive interface and comprehensive features
+                allowing me to provide the highest quality care to my patients.”
+              </p>
+              <p>Devon Lane</p>
+              <p>Medical Specialist</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
