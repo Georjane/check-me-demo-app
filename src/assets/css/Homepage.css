@@ -4,3 +4,16 @@
     justify-content: space-between;
     margin: auto;
 }
+
+.hero-section {
+    height: 45vh;
+    /* background-color: red; */
+}
+
+.hero-span {
+    color: var(--primary-color);
+}
+
+.hero-h1 {
+    font-weight: 700;
+}
