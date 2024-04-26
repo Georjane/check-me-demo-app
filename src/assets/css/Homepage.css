@@ -6,8 +6,9 @@
 }
 
 .hero-section {
-    height: 45vh;
-    /* background-color: red; */
+    height: fit-content;
+    /* height: 45vh; */
+    margin: 20px auto;
 }
 
 .hero-span {
@@ -16,4 +17,14 @@
 
 .hero-h1 {
     font-weight: 700;
+}
+
+.hero-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-div {
+    margin: -12px;
 }
