@@ -11,7 +11,7 @@ import '../assets/css/Header.css';
 
 function Header() {
   return (
-    <Navbar expand="lg" bg="light" variant="light" sticky="top">
+    <Navbar expand="lg" bg="light" variant="light">
       <Container>
         <Navbar.Brand href="#"><img src={logoSvg} alt="Logo" /></Navbar.Brand>
         <Navbar.Toggle id="menu-icon" aria-controls="navbar-nav">

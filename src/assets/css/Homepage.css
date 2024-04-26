@@ -11,11 +11,11 @@
     margin: 20px auto;
 }
 
-.hero-span {
+.pink-text {
     color: var(--primary-color);
 }
 
-.hero-h1 {
+.hero-h1, .about-section h2 {
     font-weight: 700;
 }
 
@@ -27,4 +27,28 @@
 
 .img-div {
     margin: -12px;
+}
+
+.about-section {
+    height: fit-content;
+    align-items: center;
+    background-color: #22243e;
+    margin: -12px;
+    padding: 70px 12px;
+    text-align: left;
+    color: #ECECF1;
+    /* opacity: 0.7; */
+}
+
+.about-div {
+    width: 100%;
+    height: inherit;
+    /* height: 35vh; */
+    padding: 1rem 4.5rem;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 25vh;
+    border-left: solid #ffffff15 2px;
 }
