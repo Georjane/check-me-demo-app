@@ -102,21 +102,21 @@ ul li::marker {
 }
 
 .faqDiv {
-    text-align: left;
-    max-width: 700px;
-    margin: auto;
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
 }
 
 .grey_text {
-    color: #667185;
-    ;
+  color: #667185;
+    
 }
 
 .greyText {
-    color: #1B1C31;
-    font-size: smaller;
+  color: #1b1c31;
+  font-size: smaller;
 }
 
 .light_text {
-    color: #ececf1b3;
+  color: #ececf1b3;
 }
