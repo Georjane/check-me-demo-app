@@ -2,12 +2,29 @@
 
 An educative and interactive platform powered by AI to fight breastcancer promote early detection through self screening
 
-# Tools Used
+## Check-Me-Demo-App Screenshot
+![](checkme.png)
 
+## Live Link
+- [Checkme Landing Page](https://662b85bc97f7a6b29782a3be--neon-tapioca-3ae113.netlify.app/)
+
+## Built With
+- HTML
+- JavaScript
+- CSS
 - React
 - Bootstrap 5, the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites.
 
-# Set-up linters in your local env
+## Getting Started
+To get a local copy of the repository please run the following commands on your terminal:
+```
+$ git clone https://github.com/Georjane/check-me-demo-app.git
+$ cd check-me-demo-app
+$ npm start
+```
+Access App locally on your browser using `http://localhost:3000/` or the port number configured for npm
+
+## Set-up linters in your local env
 
 ## ESLint
 
@@ -26,10 +43,9 @@ Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your proj
 
 Fix linter errors manually or use auto correct command `npx stylelint "**/*.{css,scss}" --fix`.
 
-```
-<div>
-<Button type="default" text="Default Button" />
-<Button type="outline" text="Outline Button" />
-<Button type="text-icon" text="Button with Icon" icon={<FaAngleDown />} />
-</div>
-```
+## Author
+
+### 1. Witah Georjane
+* Github: [@Georjane](https://github.com/Georjane)
+* Twitter: [@WittyJany](https://twitter.com/WittyJany)
+* LinkedIn: [Witah Georjane](https://www.linkedin.com/in/witah-georjane)
