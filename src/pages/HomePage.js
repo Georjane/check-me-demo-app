@@ -7,6 +7,7 @@ import laptop2Svg from '../assets/images/laptop2.svg';
 import starsSvg from '../assets/images/stars.svg';
 import womanSvg from '../assets/images/woman.svg';
 import plusSvg from '../assets/images/plusIcon.svg';
+import socialSvg from '../assets/images/socialmedia.svg';
 import manSvg from '../assets/images/man.svg';
 import appSvg from '../assets/images/app.svg';
 import minusSvg from '../assets/images/minusIcon.svg';
@@ -239,6 +240,18 @@ function HomePage() {
         <div className="w-100 d-flex flex-column align-items-start mt-4">
           <p className="w-100">Download the app</p>
           <div className="w-100"><img src={appSvg} alt="App" /></div>
+        </div>
+      </section>
+      <hr />
+      <section className="d-md-flex justify-content-between align-items-center m-5">
+        <div><img src={socialSvg} alt="Social Media Icons" /></div>
+        <div className="d-flex d-md-none w-100 justify-content-between my-3">
+          <p>Terms of Services</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div className="d-none d-md-flex w-25 justify-content-between">
+          <p>Terms of Services</p>
+          <p>Privacy Policy</p>
         </div>
       </section>
     </div>
