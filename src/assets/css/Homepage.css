@@ -106,3 +106,17 @@ ul li::marker {
     max-width: 700px;
     margin: auto;
 }
+
+.grey_text {
+    color: #667185;
+    ;
+}
+
+.greyText {
+    color: #1B1C31;
+    font-size: smaller;
+}
+
+.light_text {
+    color: #ececf1b3;
+}

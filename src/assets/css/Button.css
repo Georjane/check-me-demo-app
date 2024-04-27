@@ -12,6 +12,7 @@
 
 .button:hover {
   background-color: #fa40a0;
+  color: white;
 }
 
 .outline {
