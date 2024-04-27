@@ -6,7 +6,14 @@ import laptop1Svg from '../assets/images/laptop1.svg';
 import laptop2Svg from '../assets/images/laptop2.svg';
 import starsSvg from '../assets/images/stars.svg';
 import womanSvg from '../assets/images/woman.svg';
+import plusSvg from '../assets/images/plusIcon.svg';
+import socialSvg from '../assets/images/socialmedia.svg';
 import manSvg from '../assets/images/man.svg';
+import appSvg from '../assets/images/app.svg';
+import minusSvg from '../assets/images/minusIcon.svg';
+import promptSvg from '../assets/images/prompt.svg';
+import promptMobileSvg from '../assets/images/prompt_mobile.svg';
+import logoSvg from '../assets/images/logo.svg';
 import '../assets/css/Homepage.css';
 
 function HomePage() {
@@ -23,12 +30,12 @@ function HomePage() {
           <span className="pink-text"> Breast Cancer Care</span>
           , One Patient at a Time
         </h1>
-        <p className="hero-para  w-50 m-auto py-3 px-5 d-none d-md-block">
+        <p className="hero-para grey_text w-50 m-auto py-3 px-5 d-none d-md-block">
           Check Me mobile app connects patients
           and doctors for seamless communication, effortless appointment management,
           and a more empowered healthcare experience.
         </p>
-        <p className="hero-para  py-3 m-auto px-4 d-block d-md-none">
+        <p className="hero-para grey_text py-3 m-auto px-4 d-block d-md-none">
           Check Me mobile app connects patients
           and doctors for seamless communication, effortless appointment management,
           and a more empowered healthcare experience.
@@ -41,8 +48,8 @@ function HomePage() {
       <div className="img-div"><img className="hero-img" src={heroImgSvg} alt="Hero" /></div>
       <section className="d-md-flex about-section">
         <div className="about-div">
-          <h6>ABOUT CHECKME</h6>
-          <h2 className="">
+          <h6 className="light_text">ABOUT CHECKME</h6>
+          <h2>
             Founded on Love, Loss, and a Commitment to
             <span className="pink-text"> Empower Patients and Specialists</span>
             .
@@ -50,7 +57,7 @@ function HomePage() {
         </div>
         <div className="d-none d-md-block vertical-line" />
         <div className="about-div">
-          <p>
+          <p className="light_text">
             Check Me is more than a platform—it&apos;s a promise. A promise to honor a
             sister&apos;s legacy, to uplift those affected by breast cancer,
             and to support patients and specialists every step of the way.
@@ -60,15 +67,15 @@ function HomePage() {
           <div className="d-flex w-100 justify-content-between">
             <div>
               <h2>100+</h2>
-              <p>Active Users</p>
+              <p className="light_text">Active Users</p>
             </div>
             <div>
               <h2>1k+</h2>
-              <p>Medical Specialists</p>
+              <p className="light_text">Medical Specialists</p>
             </div>
             <div>
               <h2>100%</h2>
-              <p>Free for Patients</p>
+              <p className="light_text">Free for Patients</p>
             </div>
           </div>
           <Button color="white" type="text-icon" text="Read More" icon={<FaAngleDown />} />
@@ -76,13 +83,13 @@ function HomePage() {
       </section>
       <section className="app-section d-md-flex">
         <div className="order-2 app-section-div">
-          <h6>CHECK FOR BREAST CANCER WARRIORS</h6>
+          <h6 className="greyText">CHECK FOR BREAST CANCER WARRIORS</h6>
           <h2>Your Personalized Breast Cancer Hub</h2>
-          <p>
+          <p className="grey_text">
             Join Check Me Patient on the web and mobile to Access Support,
             Resources, and Expert Guidance. Some key features include:
           </p>
-          <ul>
+          <ul className="grey_text">
             <li>Access personalized support tailored to your unique needs and preferences.</li>
             <li>Locate and navigate to the nearest healthcare facilities.</li>
             <li>
@@ -100,13 +107,13 @@ function HomePage() {
       </section>
       <section className="app-section d-md-flex">
         <div className="app-section-div">
-          <h6>CHECKME FOR MEDICAL SPECIALISTS</h6>
+          <h6 className="greyText">CHECKME FOR MEDICAL SPECIALISTS</h6>
           <h2>Elevate Your Practice with Check Me Specialist.</h2>
-          <p>
+          <p className="grey_text">
             Join Check Me Specialist on the web and mobile to revolutionize the way
             you provide care and collaborate with colleagues. Some key features include:
           </p>
-          <ul>
+          <ul className="grey_text">
             <li>Schedule, reschedule, and manage appointments efficiently.</li>
             <li>Secure Communication with Patients.</li>
             <li>Eliminate paper prescriptions &  streamline medication management.</li>
@@ -133,9 +140,9 @@ function HomePage() {
                 have made all the difference in my recovery. I&apos;m grateful
                 for Check Me team.”
               </p>
-              <span>Jenny Wilson</span>
+              <span><strong>Jenny Wilson</strong></span>
               <br />
-              <span>Breast Cancer Warrior</span>
+              <span className="grey_text">Breast Cancer Warrior</span>
             </div>
           </div>
           <div className="d-flex w-100 align-items-center py-2">
@@ -147,10 +154,104 @@ function HomePage() {
                 “The platform&apos;s intuitive interface and comprehensive features
                 allowing me to provide the highest quality care to my patients.”
               </p>
-              <p>Devon Lane</p>
-              <p>Medical Specialist</p>
+              <span><strong>Devon Lane</strong></span>
+              <br />
+              <span className="grey_text">Medical Specialist</span>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="faqSection m-5">
+        <h2>Frequently Asked Questions</h2>
+        <p className="mb-4 grey_text">Everything you need to know about the product and billing.</p>
+        <div className="faqDiv">
+          <div className="d-flex justify-content-between align-items-center">
+            <p className="w-75"><strong>What resources are available on Check Me Patient?</strong></p>
+            <div className="w-25 d-flex justify-content-end"><img src={minusSvg} alt="Minus icon" /></div>
+          </div>
+          <p className="grey_text">
+            Check Me Patient offers a variety of educational resources, articles,
+            and videos to help you learn more about breast cancer, treatment options,
+            and supportive care.
+          </p>
+          <hr />
+          <div className="d-flex justify-content-between align-items-center">
+            <p className="w-75"><strong>Is my personal health information safe on Check Me Patient?</strong></p>
+            <div className="w-25 d-flex justify-content-end"><img src={plusSvg} alt="Plus Icon" /></div>
+          </div>
+          <hr />
+          <div className="d-flex justify-content-between align-items-center">
+            <p className="w-75"><strong>Is my patient data secure on Check Me Specialist?</strong></p>
+            <div className="w-25 d-flex justify-content-end"><img src={plusSvg} alt="Plus Icon" /></div>
+          </div>
+          <hr />
+          <div className="d-flex justify-content-between align-items-center">
+            <p className="w-75"><strong>How can I schedule appointments with healthcare providers?</strong></p>
+            <div className="w-25 d-flex justify-content-end"><img src={plusSvg} alt="Plus Icon" /></div>
+          </div>
+          <hr />
+          <div className="d-flex justify-content-between align-items-center">
+            <p className="w-75"><strong>Can I track my treatment progress and medications on Check Me Patient?</strong></p>
+            <div className="w-25 d-flex justify-content-end"><img src={plusSvg} alt="Plus Icon" /></div>
+          </div>
+          <hr />
+          <div className="d-flex justify-content-between align-items-center">
+            <p className="w-75"><strong>How do I join the Check Me Specialist network?</strong></p>
+            <div className="w-25 d-flex justify-content-end"><img src={plusSvg} alt="Plus Icon" /></div>
+          </div>
+        </div>
+
+      </section>
+      <section>
+        <img className="w-100 d-none d-md-block" src={promptSvg} alt="Care section" />
+        <img className="w-100 d-md-none" src={promptMobileSvg} alt="Care section" />
+      </section>
+      <section className="footer-one grey_text d-none d-md-flex justify-content-between align-items-center m-5">
+        <div className="w-50 d-flex flex-column align-items-start">
+          <div><img src={logoSvg} alt="Logo" /></div>
+          <div className="d-flex justify-content-between w-100 m-2">
+            <p>Home</p>
+            <p>About</p>
+            <p>Services</p>
+            <p>Blog</p>
+            <p>Careers</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+        <div className="w-25 d-flex flex-column align-items-start">
+          <p className="text-left">Download the app</p>
+          <div><img src={appSvg} alt="App" /></div>
+        </div>
+      </section>
+      <section className="footer-one grey_text d-md-none m-5">
+        <div className="w-100">
+          <div><img src={logoSvg} alt="Logo" /></div>
+          <div className="d-flex justify-content-between w-100 mt-3">
+            <p>Home</p>
+            <p>About</p>
+            <p>Services</p>
+          </div>
+          <div className="d-flex justify-content-between w-100">
+            <p>Blog</p>
+            <p>Careers</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+        <div className="w-100 d-flex flex-column align-items-start mt-4">
+          <p className="w-100">Download the app</p>
+          <div className="w-100"><img src={appSvg} alt="App" /></div>
+        </div>
+      </section>
+      <hr />
+      <section className="d-md-flex grey_text justify-content-between align-items-center m-5">
+        <div><img src={socialSvg} alt="Social Media Icons" /></div>
+        <div className="d-flex grey_text d-md-none w-100 justify-content-between my-3">
+          <p>Terms of Services</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div className="d-none d-md-flex w-25 grey_text justify-content-between">
+          <p>Terms of Services</p>
+          <p>Privacy Policy</p>
         </div>
       </section>
     </div>
