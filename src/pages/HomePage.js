@@ -129,7 +129,7 @@ function HomePage() {
       <section className="testimonials">
         <p className="pink-text">500+ Happy CheckMe Users</p>
         <h2>Don&apos;t just take our words</h2>
-        <div className="m-5 d-md-flex justify-content-between">
+        <div className="m-1 d-md-flex justify-content-between">
           <div className="d-flex align-items-center w-100 py-2">
             <img className="testinmonial-img w-50 d-md-none" src={womanSvg} alt="Woman" />
             <img className="testinmonial-img d-none d-md-block" src={womanSvg} alt="Woman" />
