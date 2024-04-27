@@ -1,6 +1,6 @@
 # Check-Me-Demo-App
 
-An educative and interactive platform powered by AI to fight breastcancer promote early detection through self screening
+An educative and interactive platform powered by AI to fight breast cancer promote early detection through self-screening
 
 ## Check-Me-Demo-App Screenshot
 ![](checkme.png)
